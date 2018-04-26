@@ -26,21 +26,21 @@ public:
 
 	/// catenation operators
 	friend			String			operator+ ( const String& lhs, const String& rhs );
-	friend			String			operator+ ( const String& lhs, const char*	 rhs );
-	friend			String			operator+ ( const String& lhs,		 char	 rhs );
+	friend			String			operator+ ( const String& lhs, const char*   rhs );
+	friend			String			operator+ ( const String& lhs,	     char    rhs );
 	friend			String			operator+ ( const char*	  lhs, const String& rhs );
-	friend			String			operator+ (		  char	  lhs, const String& rhs );
+	friend			String			operator+ (	  char	  lhs, const String& rhs );
 
 	/// comparators
 	friend			bool			operator> ( const String& lhs, const String& rhs );
-	friend			bool			operator> ( const String& lhs, const char*	 rhs );
-	friend			bool			operator> ( const String& lhs,		 char	 rhs );
+	friend			bool			operator> ( const String& lhs, const char*   rhs );
+	friend			bool			operator> ( const String& lhs,	     char    rhs );
 	friend			bool			operator> ( const char*	  lhs, const String& rhs );
-	friend			bool			operator> (		  char	  lhs, const String& rhs );
+	friend			bool			operator> (	  char	  lhs, const String& rhs );
 
 	/// input/output operators
 	friend			std::ostream&	operator<< ( std::ostream& lhs, const String& rhs);
-	friend			std::istream&	operator>> ( std::istream& lhs,		  String& rhs);
+	friend			std::istream&	operator>> ( std::istream& lhs,	      String& rhs);
 
 private:
 	/// symbols in string
