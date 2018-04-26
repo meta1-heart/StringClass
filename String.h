@@ -10,11 +10,11 @@ public:
 	unsigned		getLength() const;
 
 	/// ctors/dtor
-					String();
-					String( char symbol );
-					String( const char* symbolArray );
-					String( const String& string );
-					~String();
+				String();
+				String( char symbol );
+				String( const char* symbolArray );
+				String( const String& string );
+				~String();
 
 	/// index operators
 	char			operator[] ( unsigned index ) const;
