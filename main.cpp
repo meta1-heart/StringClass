@@ -22,7 +22,7 @@ String& generateStrings( unsigned N, unsigned L )
 
 void bubbleSort( String* arr, unsigned amount )
 {
-	String temp;
+	String* temp = new String();
 
 	for ( unsigned i = 0; i < amount - 1; ++i )
 	{
@@ -30,12 +30,13 @@ void bubbleSort( String* arr, unsigned amount )
 		{
 			if ( arr[j + 1] > arr[j] )
 			{
-				temp = arr[j + 1];
+				*temp = arr[j + 1];
 				arr[j + 1] = arr[j];
-				arr[j] = temp;
+				arr[j] = *temp;
 			}
 		}
 	}
+	delete temp;
 }
 
 void printStrings( String* arr, unsigned amount )
