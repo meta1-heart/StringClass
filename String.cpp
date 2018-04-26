@@ -130,7 +130,7 @@ bool operator> ( const String& lhs, const String& rhs )
 			continue;
 		}
 		else if ( ( 'A' <= lhs[n] && lhs[n] <= 'Z' || 'a' <= lhs[n] && lhs[n] <= 'z' ) &&
-				  ( 'A' <= rhs[n] && rhs[n] <= 'Z' || 'a' <= rhs[n] && rhs[n] <= 'z' ) )
+			  ( 'A' <= rhs[n] && rhs[n] <= 'Z' || 'a' <= rhs[n] && rhs[n] <= 'z' ) )
 		{
 			char lhsChar = ( lhs[n] & ~32 );
 			char rhsChar = ( rhs[n] & ~32 );
