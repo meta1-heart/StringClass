@@ -81,6 +81,7 @@ void runApp()
 	cout << endl << endl << "Sorted set of strings:" << endl << endl;
 	printStrings( strings, N );
 	cout << "=======================";
+	delete[] strings;
 }
 
 int main() {
